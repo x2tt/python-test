@@ -1,5 +1,9 @@
 name: Lambda Deployment
 
+on:
+  push:
+  pull_request:
+
 jobs:
   test-run:
     runs-on: ubuntu-latest
