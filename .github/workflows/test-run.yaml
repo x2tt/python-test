@@ -11,15 +11,21 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Set up Python 3.7
+      - name: Set up Python 3.7.7
         uses: actions/setup-python@v2
         with:
           python-version: 3.7.7
 
-      - name: Set up Python 3.6
+      - name: Set up Python 3.6.16
         uses: actions/setup-python@v2
         with:
-          python-version: 3.6
+          python-version: 3.6.15
 
-      - name: Test
+      - name: a
         run: which python3
+
+      - name: b
+        run: /opt/hostedtoolcache/Python/3.6.15/x64/bin/python3 --version
+
+      - name: c
+        run: /opt/hostedtoolcache/Python/3.7.7/x64/bin/python3 --version
