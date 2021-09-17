@@ -30,8 +30,8 @@ jobs:
       - name: c
         run: /opt/hostedtoolcache/Python/3.7.7/x64/bin/python3 --version
 
-      -name: d
+      - name: d
         run: /opt/hostedtoolcache/Python/3.6.15/x64/bin/python3 -m venv ./my-venv-with-python-3.6.16
 
-      -name: e
+      - name: e
         run: /opt/hostedtoolcache/Python/3.7.7/x64/bin/python3 -m venv ./my-venv-with-python-3.7.7
